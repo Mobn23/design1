@@ -10,10 +10,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass mo/scss/style.scss mo/css/style.css --no-source-map",
-    "style-min": "sass mo/scss/style.scss mo/css/style.min.css --no-source-map --style compressed"
-  },
+    "watch": "sass mo/scss/style.scss:mo/css/style.css mo/scss/style-dark.scss:mo/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass mo/scss/style.scss:mo/css/style.min.css mo/scss/style-dark.scss:mo/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-dark": "sass mo/scss/style-dark.scss mo/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass mo/scss/style-dark.scss mo/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass mo/scss/style.scss mo/css/style.css --no-source-map",
+    "style-light-min": "sass mo/scss/style.scss mo/css/style.min.css --no-source-map --style compressed"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

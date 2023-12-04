@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  },
+  "name": "themes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"**/*.scss\"",
+    "watch": "sass mo/scss/style.scss:mo/css/style.css mo/scss/style-dark.scss:mo/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass mo/scss/style.scss:mo/css/style.min.css mo/scss/style-dark.scss:mo/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-dark": "sass mo/scss/style-dark.scss mo/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass mo/scss/style-dark.scss mo/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass mo/scss/style.scss mo/css/style.css --no-source-map",
+    "style-light-min": "sass mo/scss/style.scss mo/css/style.min.css --no-source-map --style compressed"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.69.5",
+    "stylelint": "^15.11.0",
+    "stylelint-config-sass-guidelines": "^10.0.0"
+  }
+}

@@ -1,0 +1,124 @@
+$font-color: #000;
+$font-alternative-color: #fff;
+$accent-color: #ee6c4d;
+$background-color: #608fcc;
+$background-alternative-color: #e0fbfc;
+$nova-square: 'Nova Square', sans-serif;
+$dark-bg-color:#06292b;
+
+@mixin font-width {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@mixin home-img {
+    width: 30%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+
+@mixin home-img-hov {
+    &:hover {
+        transform: scale(1.2);
+        border-radius: 50%;
+        background-color: #010202;
+        box-shadow: 0 0 20px rgb(255, 162, 0);
+    }
+}
+
+@mixin logo {
+    padding: 10px;
+}
+
+@mixin logo-pic {
+    width: 100px;
+    height: 100px;
+    transform: perspective(400px) rotateY(20deg);
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    background-color:rgb(255, 162, 0)
+}
+
+@mixin logo-pic-hov {
+    &:hover {
+        transform: perspective(400px) rotateY(0deg);
+    }
+}
+
+@mixin navbar {
+    .nav {
+        perspective: 1000px;
+    }
+    
+    .nav ul {
+        transform-style: preserve-3d;
+        transition: transform 0.3s ease;
+    }
+    
+    .nav ul:hover {
+        transform: rotateX(30deg);
+    }
+}
+
+@mixin technologies-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+@mixin title {
+    grid-column: 1 / -1;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+@mixin box {
+    grid-column: span 1;
+    background-color: rgb(255, 162, 0);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #020201;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.1s ease, background-color 0.3s ease;
+
+    &.box-1 {
+        grid-column:  1;
+    }
+
+    &.box-2 {
+        grid-column:  2;
+    }
+
+    &.box-3 {
+        grid-column:  3;
+    }
+}
+
+@mixin tech {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+@mixin sidebar {
+    width: 200px;
+    padding: 20px;
+    display: block;
+}
+
+@mixin content {
+    flex: 1;
+    padding: 20px;
+}

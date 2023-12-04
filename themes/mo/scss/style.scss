@@ -1,0 +1,79 @@
+@import 'variables';
+@import '../../node_modules/normalize.css/normalize';
+
+@import 'blockquotes';
+@import 'code';
+@import 'media';
+
+
+body {
+    background-color: $background-color
+}
+
+* {
+    color: $font-color;
+    font-family: $nova-square;
+    @include font-width
+}
+
+.home-img {
+    @include home-img;
+    @include home-img-hov;
+    @include media {
+        margin: 10px;
+    }
+}
+
+.logo-pic {
+    @include logo-pic;
+    @include logo-pic-hov
+}
+
+.logo {
+    @include logo;
+}
+
+ul {
+    @include navbar;
+}
+
+.technologies-page {
+    @include technologies-page;
+
+    .title {
+        @include title;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.box {
+    @include box;
+    @include media {
+        padding: 10px;
+    }
+    
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.tech {
+    @include tech;
+}
+
+.sidebar {
+    @include sidebar;
+}
+
+.content {
+    @include content;
+}
+
+@include sidebar-media {
+    .sidebar {
+        display: none;
+    }
+}

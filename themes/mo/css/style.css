@@ -343,12 +343,14 @@ pre code {
 }
 
 body {
-  background-color: #3d5a80;
+  background-color: #608fcc;
 }
 
 * {
   color: #000;
   font-family: "Nova Square", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .home-img {
@@ -365,8 +367,8 @@ body {
 .home-img:hover {
   transform: scale(1.2);
   border-radius: 50%;
-  background-color: #3498db;
-  box-shadow: 0 0 20px rgba(52, 152, 219, 0.8);
+  background-color: #010202;
+  box-shadow: 0 0 20px rgb(255, 162, 0);
 }
 @media screen and (max-width: 768px) {
   .home-img {
@@ -378,10 +380,9 @@ body {
   width: 100px;
   height: 100px;
   transform: perspective(400px) rotateY(20deg);
-  box-shadow: 5px 5px 6px rgba(253, 253, 253, 0.603);
   transition: transform 0.3s ease;
   border-radius: 50%;
-  background-color: #e0fbfc;
+  background-color: rgb(255, 162, 0);
 }
 .logo-pic:hover {
   transform: perspective(400px) rotateY(0deg);
@@ -400,4 +401,73 @@ ul .nav ul {
 }
 ul .nav ul:hover {
   transform: rotateX(30deg);
+}
+
+.technologies-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.technologies-page .title {
+  grid-column: 1/-1;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+}
+.technologies-page:hover {
+  transform: scale(1.2);
+}
+
+.box {
+  grid-column: span 1;
+  background-color: rgb(255, 162, 0);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #020201;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  transition: transform 0.1s ease, background-color 0.3s ease;
+}
+.box.box-1 {
+  grid-column: 1;
+}
+.box.box-2 {
+  grid-column: 2;
+}
+.box.box-3 {
+  grid-column: 3;
+}
+@media screen and (max-width: 768px) {
+  .box {
+    padding: 10px;
+  }
+}
+.box:hover {
+  transform: scale(1.2);
+}
+
+.tech {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  display: block;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
 }

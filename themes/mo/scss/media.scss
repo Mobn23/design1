@@ -5,3 +5,9 @@
         @content;
     }
 }
+
+@mixin sidebar-media {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}

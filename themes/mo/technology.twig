@@ -1,17 +1,21 @@
 {% include 'incl/header.twig' %}
 <body>
     {% include 'incl/nav.twig' %}
-    {{ content }}
     <div class="tech">
         <div class="sidebar">
-            <a href="technology">Tech 1</a><br>
-            <a href="technology">Tech 2</a><br>
-            <a href="technology">Tech 3</a><br>
+            <h1>Technologies</h1>
+            <a href="css">CSS</a><br>
+            <a href="git">GIT</a><br>
+            <a href="html">HTML</a><br>
+            <a href="javascript">JavaScript</a><br>
+            <a href="php">PHP</a><br>
+            <a href="python">Python</a><br>
+            <a href="sqlite">SQLite</a><br>
         </div>
 
         <div class="content">
-            <h1>Technology Page</h1>
-            <p>This is a sample content for the technology page.</p>
+            {{ content }}
+
         </div>
     </div>
     {% include 'incl/footer.twig' %}

@@ -3,6 +3,7 @@ layout: technologies.twig
 title: Technologies 
 description: This is our technologies page.
 Template: technologies
+hidden: false
 ---
 
 

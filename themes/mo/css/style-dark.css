@@ -343,11 +343,11 @@ pre code {
 }
 
 body {
-  background-color: #0073A8;
+  background-color: #48694B;
 }
 
 * {
-  color: #0D0905;
+  color: #c4c4c4;
   font-family: "Nova Square", sans-serif;
   max-width: 800px;
   margin: 0 auto;
@@ -363,12 +363,13 @@ body {
   align-items: center;
   transition: transform 0.3s ease;
   border-radius: 50%;
+  filter: brightness(70%);
 }
 .home-img:hover {
   transform: scale(1.2);
   border-radius: 50%;
-  background-color: #010202;
-  box-shadow: 0 0 20px #E67D00;
+  background-color: #097114;
+  box-shadow: 0 0 20px #8F465E;
 }
 @media screen and (max-width: 768px) {
   .home-img {
@@ -382,7 +383,7 @@ body {
   transform: perspective(400px) rotateY(20deg);
   transition: transform 0.3s ease;
   border-radius: 50%;
-  background-color: #E67D00;
+  background-color: #8F465E;
 }
 .logo-pic:hover {
   transform: perspective(400px) rotateY(0deg);
@@ -412,7 +413,7 @@ ul .nav ul:hover {
 }
 .technologies-page .title {
   grid-column: 1/-1;
-  color: #0D0905;
+  color: #c4c4c4;
   padding: 10px;
   text-align: center;
 }
@@ -421,13 +422,13 @@ ul .nav ul:hover {
 }
 
 .box {
-  background-color: #E67D00;
+  background-color: #8F465E;
   padding: 20px;
   text-align: center;
   text-decoration: none;
   color: #0D0905;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  transition: transform 0.1s ease, background-color 0.3s ease;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  transition: transform 0.1s ease, #48694B 0.3s ease;
 }
 .box.box-1 {
   grid-column: 1;
@@ -485,8 +486,26 @@ ul .nav ul:hover {
     display: none;
   }
 }
+code {
+  margin: 0 0.1em;
+  padding: 0.1em 0.2em;
+  border: 1px solid #a8a8a8;
+  border-radius: 0.3em;
+  background: #120F10;
+  font-family: monospace;
+  font-size: 0.85rem;
+  line-height: 1.9824;
+}
+
+pre {
+  padding: 0 1em;
+  border: 1px solid #cbcbcb;
+  border-radius: 0.3em;
+  background: #120F10;
+}
+
 .nav a:hover {
-  color: #E67D00;
+  color: #8F465E;
 }
 
 .color-bg {
@@ -494,9 +513,9 @@ ul .nav ul:hover {
 }
 
 .fk-link:hover {
-  color: #E67D00;
+  color: #8F465E;
 }
 
 .report-img {
-  filter: brightness(70%);
+  filter: brightness(50%);
 }

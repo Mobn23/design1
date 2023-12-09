@@ -15,7 +15,12 @@
 }
 
 .nav a, .nav-toggle {
-    color: #3700ff;
+    color: #0D0905;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #E67D00;
 }
 
 .nav-toggle {

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass mo/scss/style.scss mo/css/style.css --no-source-map",
+    "style": "sass mo/scss/style.scss mo/css/style.css --no-source-map && sass mo/scss/style-dark.scss mo/css/style-dark.css --no-source-map",
     "style-min": "sass mo/scss/style.scss mo/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],

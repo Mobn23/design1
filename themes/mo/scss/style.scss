@@ -77,3 +77,19 @@ ul {
         display: none;
     }
 }
+
+.nav a:hover {
+    color: $box-color;
+}
+
+.color-bg {
+    @include color-bg;
+}
+
+.fk-link:hover {
+    color: $accent-color;
+}
+
+.report-img {
+    @include report-img;
+}

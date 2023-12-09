@@ -1,9 +1,22 @@
+@import 'variables';
+
 code {
     margin: 0 0.1em;
     padding: 0.1em 0.2em;
-    border: 1px solid #ccc;
+    border: 1px solid #0D0905;
     border-radius: 0.3em;
-    background: #f5f5f5;
+    background: $code-pre-background;
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.9824;
+}
+
+@mixin code-dark {
+    margin: 0 0.1em;
+    padding: 0.1em 0.2em;
+    border: 1px solid #a8a8a8;
+    border-radius: 0.3em;
+    background: $code-pre-background-dark;
     font-family: monospace;
     font-size: 0.85rem;
     line-height: 1.9824;
@@ -11,9 +24,16 @@ code {
 
 pre {
     padding: 0 1em;
-    border: 1px solid #ccc;
+    border: 1px solid #0D0905;
     border-radius: 0.3em;
-    background: #f5f5f5;
+    background: $code-pre-background;
+}
+
+@mixin pre-dark {
+    padding: 0 1em;
+    border: 1px solid #cbcbcb;
+    border-radius: 0.3em;
+    background: $code-pre-background-dark;
 }
 
 pre code {

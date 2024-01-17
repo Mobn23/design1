@@ -1,0 +1,77 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+        {{ content }}
+    </div>
+        <div class="gallery-grid">
+        <div class="top-left">
+            <a href="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pica.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <source media="(min-width: 900px)" sizes="(min-width: 300px) 50vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pica.jpg?nc?w=200">
+                    <source media="(max-width: 899px)" sizes="(min-width: 150px) 90vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pic1-small.jpg?nc">
+                    <img src="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pica.jpg" alt="pic1">
+                </picture>
+            </a>
+        </div>
+
+        <div class="top-mid">
+            <a href="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picb.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <source media="(min-width: 900px)" sizes="(min-width: 300px) 50vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picb.jpg?nc?w=200">
+                    <source media="(max-width: 899px)" sizes="(min-width: 150px) 90vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pic2-small.jpg?nc">
+                    <img src="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picb.jpg" alt="pic2">
+                </picture>
+            </a>
+        </div>
+
+        <div class="top-right">
+            <a href="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picc.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <source media="(min-width: 900px)" sizes="(min-width: 300px) 50vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picc.jpg?nc?w=200">
+                    <source media="(max-width: 899px)" sizes="(min-width: c50px) 90vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pic3-small.jpg?nc">
+                    <img src="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picc.jpg" alt="pic3">
+                </picture>
+            </a>
+        </div>
+
+        <div class="bottom-left">
+            <a href="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picd.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <source media="(min-width: 900px)" sizes="(min-width: 300px) 50vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picd.jpg?nc?w=200">
+                    <source media="(max-width: 899px)"sizes="(min-width: 150px) 90vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pic4-small.jpg?nc">
+                    <img src="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picd.jpg" alt="pic4">
+                </picture>
+            </a>
+        </div>
+
+        <div class="bottom-mid">
+            <a href="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pice.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <source media="(min-width: 900px)" sizes="(min-width: 300px) 50vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pice.jpg?nc?w=200">
+                    <source media="(max-width: 899px)" sizes="(min-width: 150px) 90vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pic5-small.jpg?nc">
+                    <img src="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pice.jpg" alt="pic5">
+                </picture>
+            </a>
+        </div>
+
+        <div class="bottom-right">
+            <a href="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picf.jpg" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <source media="(min-width: 900px)" sizes="(min-width: 300px) 50vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picf.jpg?nc?w=200">
+                    <source media="(max-width: 899px)" sizes="(min-width: 150px) 90vw" srcset="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/pic6-small.jpg?nc">
+                    <img sizes="(min-width: 640px)" src="https://www.student.bth.se/~mobn23/dbwebb-kurser/design/me/portfolio/image/picf.jpg" alt="pic6">
+                </picture>
+            </a>
+        </div>
+    </div>
+
+    <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Nck6BZga7TQ?si=TsfxQum2m8Y2tOP1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

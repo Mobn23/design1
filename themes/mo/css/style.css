@@ -500,3 +500,54 @@ ul .nav ul:hover {
 .report-img {
   filter: brightness(70%);
 }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 2px;
+  padding: 15px;
+  margin: auto;
+  justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+    padding: 15px;
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+.youtube-video {
+  display: flex;
+  margin: auto;
+  padding: 15px;
+}
+
+.analysis-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.schedule {
+  display: flex;
+  margin: auto;
+  padding: 15px;
+  height: 575px;
+  width: 100%;
+}
+
+.screenshots {
+  display: grid;
+  grid-template-columns: 3, 1fr;
+  justify-content: center;
+  margin: auto;
+}
+
+.screenshots .img {
+  padding: 15px;
+  width: 100px;
+}
